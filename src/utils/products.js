@@ -22,6 +22,9 @@ import slider1 from '../assets/img/hero-img.png';
 import slider2 from '../assets/img/products/phone-04-removebg-preview.png';
 import slider3 from '../assets/img/products/headphone.png';
 import slider4 from '../assets/img/products/watch-07.png';
+import { FaShippingFast, FaShieldAlt } from "react-icons/fa";
+import { BiSupport } from "react-icons/bi";
+import { RiSecurePaymentLine } from "react-icons/ri";
 
 
 export const products = [
@@ -484,5 +487,32 @@ export const SliderData = [
       title: "50% Off For Your First Shopping",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis lobortis consequat eu, quam etiam at quis ut convallis.",
       cover: slider4,
+  },
+];
+
+export const serviceData = [
+  {
+    icon: <FaShippingFast />,
+    title: "Free Shipping",
+    subtitle: "Lorem ipsum dolor sit amet.",
+    bg: "#fdefe6",
+  },
+  {
+    icon: <RiSecurePaymentLine />,
+    title: "Safe Payment",
+    subtitle: "Lorem ipsum dolor sit amet.",
+    bg: "#ceebe9",
+  },
+  {
+    icon: <FaShieldAlt />,
+    title: "Secure Payment",
+    subtitle: "Lorem ipsum dolor sit amet.",
+    bg: "#e2f2b2",
+  },
+  {
+    icon: <BiSupport />,
+    title: "Back Guarantee",
+    subtitle: "Lorem ipsum dolor sit amet.",
+    bg: "#d6e5fb",
   },
 ];

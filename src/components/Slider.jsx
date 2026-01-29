@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Container, Row, Col } from "react-bootstrap";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import { SliderData } from "../utils/products"; // Your data file
+import { SliderData } from "../utils/products";
 import "../App.css"; 
 
 const NextArrow = (props) => {

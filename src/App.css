@@ -99,3 +99,51 @@
   font-size: 18px;
   padding: 10px 25px;
 }
+
+
+/* Wrapper Section */
+.wrapper {
+  margin: 50px 0;
+}
+
+.service-card {
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.service-card .icon {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 auto 20px auto;
+  background-color: #fff;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #1f2937;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: grey;
+  font-weight: 400;
+  margin: 0;
+}
