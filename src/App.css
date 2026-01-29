@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+.navElements .nav-link{
+  font-size: 18px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hamburger-icon{
+  width: 30px;
+  height: 25px;
+  position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.hamburger-icon span{
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #333;
+  border-radius: 9px;
+  opacity: 1;  
+  transition: all 0.3s ease-in-out;
+  transform-origin: center;
+}
+
+.hamburger-icon.open span:nth-child(1) {
+  transform: translateY(11px) rotate(135deg);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.hamburger-icon.open span:nth-child(3) {
+  transform: translateY(-11px) rotate(-135deg);
+}
+
+.homeSlider {
+  background-color: #C4DCFF;
+  padding-top:140px;
+  padding-bottom: 20px;
+  margin-top: 50px; 
+  position: relative;
+}
+.carouselSlider .slick-slide{
+  padding: 0 60px;
+}
+
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  font-size:15px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  z-index: 99;
+  transition: all 0.3s ease;
+  color: #C4DCFF;
 }
 
-.App-link {
-  color: #61dafb;
+.custom-arrow:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+.custom-arrow.prev {
+  left: -25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.custom-arrow.next {
+  right: -25px;
+}
+
+@media (max-width: 768px) {
+  .custom-arrow.prev {
+    left: 10px; 
   }
-  to {
-    transform: rotate(360deg);
+  .custom-arrow.next {
+    right: 10px;
   }
+}
+
+.detail-box h2 {
+  font-size: 47px !important;
+  font-weight: 630 !important;
+}
+
+.detail-box button{
+  border-radius: 30px;
+  background-color: #0F3460;
+  border: transparent;
+  font-size: 18px;
+  padding: 10px 25px;
 }
