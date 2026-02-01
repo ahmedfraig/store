@@ -25,6 +25,7 @@ import slider4 from '../assets/img/products/watch-07.png';
 import { FaShippingFast, FaShieldAlt } from "react-icons/fa";
 import { BiSupport } from "react-icons/bi";
 import { RiSecurePaymentLine } from "react-icons/ri";
+import { BsEvStation } from 'react-icons/bs';
 
 
 export const products = [
@@ -44,7 +45,9 @@ export const products = [
         text: "Great sofa, very comfortable and stylish!",
       },
     ],
-    avgRating: 4.5,
+    avgRating: 4.9,
+    newArrival: false,
+    bestSeller: true,
   },
   {
     id: "02",
@@ -66,7 +69,9 @@ export const products = [
         text: "I love this sofa! It fits perfectly in my living room.",
       },
     ],
-    avgRating: 4.7,
+    avgRating: 5,
+    newArrival: false,
+    bestSeller: true,
   },
   {
     id: "03",
@@ -88,7 +93,9 @@ export const products = [
         text: "I love this sofa! It fits perfectly in my living room.",
       },
     ],
-    avgRating: 4.5,
+    avgRating: 4.8,
+    newArrival: false,
+    bestSeller: true,
   },
   {
     id: "04",
@@ -106,7 +113,9 @@ export const products = [
         text: "Great phone, very powerful and stylish!",
       },
     ],
-    avgRating: 4.5,
+    avgRating: 4.3,
+    newArrival: true,
+    bestSeller: false,
   },
   {
     id: "05",
@@ -128,7 +137,9 @@ export const products = [
         text: "I love this phone! It fits perfectly in my hand.",
       },
     ],
-    avgRating: 4.5,
+    avgRating: 4.4,
+    newArrival: true,
+    bestSeller: false,
   },
   {
     id: "06",
@@ -150,7 +161,9 @@ export const products = [
         text: "I love this phone! It fits perfectly in my hand.",
       },
     ],
-    avgRating: 4.5,
+    avgRating: 4,
+    newArrival: true,
+    bestSeller: false,
   },
   {
     id: "07",
@@ -172,7 +185,9 @@ export const products = [
         text: "I love this phone! It fits perfectly in my hand.",
       },
     ],
-    avgRating: 4.5,
+    avgRating: 4.6,
+    newArrival: true,
+    bestSeller: false,
   },
   {
     id: "08",
@@ -194,7 +209,9 @@ export const products = [
         text: "I love this phone! It fits perfectly in my hand.",
       },
     ],
-    avgRating: 4.5,
+    avgRating: 4.9,
+    newArrival: true,
+    bestSeller: false,
   },
   {
     id: "09",
@@ -216,7 +233,9 @@ export const products = [
         text: "I love this phone! It fits perfectly in my hand.",
       },
     ],
-    avgRating: 4.5,
+    avgRating: 4.9,
+    newArrival: true,
+    bestSeller: false,
   },
   {
     id: "10",
@@ -239,6 +258,8 @@ export const products = [
       },
     ],
     avgRating: 4.5,
+    newArrival: false,
+    bestSeller: false,
   },
   {
     id: "11",
@@ -261,6 +282,8 @@ export const products = [
       },
     ],
     avgRating: 4.5,
+    newArrival: false,
+    bestSeller: false,
   },
   {
     id: "12",
@@ -283,6 +306,8 @@ export const products = [
       },
     ],
     avgRating: 4.5,
+    newArrival: false,
+    bestSeller: false,
   },
   {
     id: "13",
@@ -304,7 +329,9 @@ export const products = [
         text: "I love this sofa! It fits perfectly in my living room.",
       },
     ],
-    avgRating: 4.5,
+    avgRating: 4.8,
+    newArrival: false,
+    bestSeller: true,
   },
   {
     id: "14",
@@ -326,7 +353,9 @@ export const products = [
         text: "I love this sofa! It fits perfectly in my living room.",
       },
     ],
-    avgRating: 4.5,
+    avgRating: 4.9,
+    newArrival: false,
+    bestSeller: true,
   },
   {
     id: "15",
@@ -348,7 +377,9 @@ export const products = [
         text: "I love this sofa! It fits perfectly in my living room.",
       },
     ],
-    avgRating: 4.5,
+    avgRating: 4.9 ,
+    newArrival: false,
+    bestSeller: true,
   },
   {
     id: "16",
@@ -370,7 +401,9 @@ export const products = [
         text: "I love this sofa! It fits perfectly in my living room.",
       },
     ],
-    avgRating: 4.5,
+    avgRating: 4.9,
+    newArrival: false,
+    bestSeller: true,
   },
   {
     id: "17",
@@ -392,7 +425,9 @@ export const products = [
         text: "I love these headphones! They fit perfectly on my ears.",
       },
     ],
-    avgRating: 4.5,
+    avgRating: 4.6,
+    newArrival: true,
+    bestSeller: false,
   },
   {
     id: "18",
@@ -414,7 +449,9 @@ export const products = [
         text: "I love these headphones! They fit perfectly on my ears.",
       },
     ],
-    avgRating: 4.5,
+    avgRating: 4.2,
+    newArrival: true,
+    bestSeller: false,
   },
   {
     id: "19",
@@ -436,7 +473,9 @@ export const products = [
         text: "I love these headphones! They fit perfectly on my ears.",
       },
     ],
-    avgRating: 4.5,
+    avgRating: 4.4,
+    newArrival: true,
+    bestSeller: false,
   },
   {
     id: "20",
@@ -458,7 +497,9 @@ export const products = [
         text: "I love these headphones! They fit perfectly on my ears.",
       },
     ],
-    avgRating: 4.5,
+    avgRating: 4.7,
+    newArrival: true,
+    bestSeller: false,
   }
 ];
 

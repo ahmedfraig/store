@@ -182,14 +182,21 @@
   left: 17px;
 }
 
-.discount-productSection{
-  background-color: #D7E1EB;
+.productsSection{
   padding-top: 80px;
   padding-bottom: 60px;
 }
 
+.discount-productSection{
+  background-color: #D7E1EB;
+}
+
+.bestSellersProducts{
+  background-color: #F6F9FC;
+}
+
 .products-container{
-  max-width:1000px;
+  max-width:900px;
   padding:0 47px !important;
 }
 
