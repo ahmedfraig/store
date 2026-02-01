@@ -1,8 +1,16 @@
-.navElements .nav-link{
+.visible {
+  display: inline;
+}
+
+.hidden {
+  display: none;
+}
+
+.navElements .nav-link {
   font-size: 18px;
 }
 
-.hamburger-icon{
+.hamburger-icon {
   width: 30px;
   height: 25px;
   position: relative;
@@ -13,13 +21,13 @@
   z-index: 9999;
 }
 
-.hamburger-icon span{
+.hamburger-icon span {
   display: block;
   width: 100%;
   height: 3px;
   background-color: #333;
   border-radius: 9px;
-  opacity: 1;  
+  opacity: 1;
   transition: all 0.3s ease-in-out;
   transform-origin: center;
 }
@@ -38,14 +46,18 @@
 }
 
 .homeSlider {
-  background-color: #C4DCFF;
-  padding-top:140px;
-  padding-bottom: 20px;
-  margin-top: 50px; 
+  background-color: #c4dcff;
+
+  margin-top: 50px;
   position: relative;
 }
-.carouselSlider .slick-slide{
+.carouselSlider .slick-slide {
   padding: 0 60px;
+}
+
+.slider-row{
+    padding-top: 150px;
+  padding-bottom: 20px;
 }
 
 .custom-arrow {
@@ -54,7 +66,7 @@
   transform: translateY(-50%);
   width: 20px;
   height: 20px;
-  font-size:15px;
+  font-size: 15px;
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 50%;
   display: flex;
@@ -64,7 +76,7 @@
   cursor: pointer;
   z-index: 99;
   transition: all 0.3s ease;
-  color: #C4DCFF;
+  color: #c4dcff;
 }
 
 .custom-arrow:hover {
@@ -80,7 +92,7 @@
 
 @media (max-width: 768px) {
   .custom-arrow.prev {
-    left: 10px; 
+    left: 10px;
   }
   .custom-arrow.next {
     right: 10px;
@@ -92,14 +104,13 @@
   font-weight: 630 !important;
 }
 
-.detail-box button{
+.detail-box button {
   border-radius: 30px;
-  background-color: #0F3460;
+  background-color: #0f3460;
   border: transparent;
   font-size: 18px;
   padding: 10px 25px;
 }
-
 
 /* Wrapper Section */
 .wrapper {
@@ -117,7 +128,7 @@
 
 .service-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .service-card .icon {
@@ -146,4 +157,143 @@
   color: grey;
   font-weight: 400;
   margin: 0;
+}
+
+  .slider-image-col {
+    padding-top:50px;
+}
+
+.sliderImage {
+  transform: translateY(-85px);
+}
+
+@media (max-width: 768px) {
+  .sliderImage {
+    transform: translateY(0);
+    margin-bottom: 20px;
+  }
+}
+
+.cart-num {
+  font-size: 0.6rem;
+  background-color: #0599FC;
+  position: absolute;
+  top: 0;
+  left: 17px;
+}
+
+.discount-productSection{
+  background-color: #D7E1EB;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+.products-container{
+  max-width:1000px;
+  padding:0 47px !important;
+}
+
+@media(max-width: 991px) and (min-width: 576px){
+  .products-container{
+    padding:0 0px !important;
+  } 
+}
+
+.product-item{
+  width: 100%;
+  border-radius:30px;
+  padding:20px;
+  padding-bottom: 35px;
+  transition: all 0.3s ease-out;
+  background-color: white;
+}
+
+
+.product-item:hover{
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transform: scale(1.01);
+  box-shadow: inset 0 -4px 0 0 #0599FC;
+}
+
+.image-part{
+  position:relative;
+  margin-bottom:15px;
+}
+
+
+.discount-percent {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  background-color: #0599FC;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 14px;
+}
+
+.favorite-icon{
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  display: none;
+}
+
+.product-item:hover .favorite-icon{
+  display: flex;
+}
+
+.product-image{
+  height:200px;
+  width: 100%;
+  object-fit:contain;
+  margin-top:10px;
+}
+
+.product-title{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.price{
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.old-price{
+  text-decoration: line-through;
+  color: grey;
+  margin-left: 7px;
+  font-weight: 500;
+}
+
+.cart-add{
+  background-color: transparent;
+  border: none;
+  width:50px;
+  height:50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: 400;
+  border-radius: 50%;
+  padding:0;
+}
+
+.cart-add svg{
+  stroke-width: 1.7;
+}
+.cart-add:hover{
+  background-color: #0599FC;
+  color: white;
+  cursor: pointer;
 }

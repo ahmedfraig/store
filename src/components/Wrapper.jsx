@@ -6,7 +6,7 @@ import "../App.css";
 const Wrapper = () => {
   return (
     <section className="wrapper background">
-      <Container>
+      <Container className="px-sm-2 px-5">
         <Row>
           {serviceData.map((val, index) => {
             return (

@@ -1,16 +1,15 @@
-import './App.css';
-import React from 'react';
-import Navbar from './components/Navbar';
-import SliderHome from './components/Slider';
-import Wrapper from './components/Wrapper';
+import "./App.css";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <SliderHome />
-      <Wrapper />
+      <Home />
     </div>
   );
 }

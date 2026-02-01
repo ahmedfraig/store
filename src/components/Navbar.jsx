@@ -23,8 +23,7 @@ function NavBar() {
           <div className="position-relative" style={{ cursor: "pointer" }}>
             <FaShoppingCart size={20} />
             <span
-              className="position-absolute top-0 start-80 translate-middle badge rounded-pill"
-              style={{ fontSize: "0.6rem", backgroundColor: "#0599FC" }}
+              className="translate-middle badge rounded-pill cart-num"
             >
               2
             </span>

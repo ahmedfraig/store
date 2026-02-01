@@ -44,7 +44,7 @@ const SliderHome = () => {
           {SliderData.map((value) => {
             return (
               <div key={value.id}>
-                <Row className="d-flex align-items-center" style={{ minHeight: "400px" }}>
+                <Row className="d-flex align-items-center slider-row" style={{ minHeight: "400px" }}>
                   
                   <Col md={6}>
                     <div className="detail-box">
@@ -56,9 +56,9 @@ const SliderHome = () => {
                     </div>
                   </Col>
 
-                  <Col md={6} className="text-center">
+                  <Col md={6} className="text-center slider-image-col">
                     <img
-                      className="img-fluid"
+                      className="img-fluid sliderImage"
                       src={value.cover}
                       alt={value.title}
                       style={{ maxHeight: "350px", objectFit: "contain", margin: "0 auto" }}
