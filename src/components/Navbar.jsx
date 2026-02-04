@@ -2,6 +2,7 @@ import Container from "react-bootstrap/Container";
 import { useState } from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import {Link} from "react-router-dom";
 import { FaShoppingBag, FaShoppingCart } from "react-icons/fa";
 
 function NavBar() {
@@ -42,9 +43,9 @@ function NavBar() {
         </div>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="navElements ms-auto fw-bold gap-4 text-center mt-2 mt-md-0">
-            <Nav.Link href="#" onClick={()=> setExpand(false)}>Home</Nav.Link>
-            <Nav.Link href="#" onClick={()=> setExpand(false)}>Shop</Nav.Link>
-            <Nav.Link className="me-md-4" href="#" onClick={()=> setExpand(false)}>
+            <Nav.Link as={Link} to="/" onClick={()=> setExpand(false)}>Home</Nav.Link>
+            <Nav.Link as={Link} to="/shop" onClick={()=> setExpand(false)}>Shop</Nav.Link>
+            <Nav.Link as={Link} to="/cart" className="me-md-4" onClick={()=> setExpand(false)}>
               Cart
             </Nav.Link>
           </Nav>

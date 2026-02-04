@@ -18,6 +18,10 @@ import headphone from '../assets/img/products/headphone.png';
 import wireless_02 from '../assets/img/products/wireless-02.png';
 import wireless_03 from '../assets/img/products/wireless-03.png';
 import wireless_04 from '../assets/img/products/wireless-04.png';
+import watch_01 from '../assets/img/products/watch-01.jpg';
+import watch_02 from '../assets/img/products/watch-02.jpg';
+import watch_03 from '../assets/img/products/watch-03.jpg';
+import watch_04 from '../assets/img/products/watch-04.jpg';
 import slider1 from '../assets/img/hero-img.png';
 import slider2 from '../assets/img/products/phone-04-removebg-preview.png';
 import slider3 from '../assets/img/products/headphone.png';
@@ -25,8 +29,6 @@ import slider4 from '../assets/img/products/watch-07.png';
 import { FaShippingFast, FaShieldAlt } from "react-icons/fa";
 import { BiSupport } from "react-icons/bi";
 import { RiSecurePaymentLine } from "react-icons/ri";
-import { BsEvStation } from 'react-icons/bs';
-
 
 export const products = [
   {
@@ -500,7 +502,103 @@ export const products = [
     avgRating: 4.7,
     newArrival: true,
     bestSeller: false,
-  }
+  },
+  {
+    id: "21",
+    productName: "Rolex Watch",
+    imgUrl: watch_01,
+    category: "watch",
+    price: 299,
+    discount: 0,
+    shortDesc: "A luxurious watch for your wrist.",
+    description: "This watch is crafted with high-quality materials to ensure durability and comfort. Its modern design fits perfectly in any setting.",
+    reviews: [
+      {
+        name: "John Doe",
+        rating: 4.8,
+        text: "Great watch, very comfortable and stylish!",
+      },
+      {
+        rating: 4.8,
+        text: "I love this watch! It fits perfectly on my wrist.",
+      },
+    ],
+    avgRating: 4.5,
+    newArrival: false,
+    bestSeller: false,
+  },
+  {
+    id: "22",
+    productName: "Rolex Watch",
+    imgUrl: watch_02,
+    category: "watch",
+    price: 299,
+    discount: 0,
+    shortDesc: "A luxurious watch for your wrist.",
+    description: "This watch is crafted with high-quality materials to ensure durability and comfort. Its modern design fits perfectly in any setting.",
+    reviews: [
+      {
+        name: "John Doe",
+        rating: 4.8,
+        text: "Great watch, very comfortable and stylish!",
+      },
+      {
+        rating: 4.8,
+        text: "I love this watch! It fits perfectly on my wrist.",
+      },
+    ],
+    avgRating: 4.5,
+    newArrival: false,
+    bestSeller: false,
+  },
+  {
+    id: "23",
+    productName: "Rolex Watch",
+    imgUrl: watch_03,
+    category: "watch",
+    price: 299,
+    discount: 0,
+    shortDesc: "A luxurious watch for your wrist.",
+    description: "This watch is crafted with high-quality materials to ensure durability and comfort. Its modern design fits perfectly in any setting.",
+    reviews: [
+      {
+        name: "John Doe",
+        rating: 4.8,
+        text: "Great watch, very comfortable and stylish!",
+      },
+      {
+        rating: 4.8,
+        text: "I love this watch! It fits perfectly on my wrist.",
+      },
+    ],
+    avgRating: 4.7,
+    newArrival: false,
+    bestSeller: false,
+  },
+  {
+    id: "24",
+    productName: "Apple Watch",
+    imgUrl: watch_04,
+    category: "watch",
+    price: 399,
+    discount: 0,
+    shortDesc: "A luxurious watch for your wrist.",
+    description: "This watch is crafted with high-quality materials to ensure durability and comfort. Its modern design fits perfectly in any setting.",
+    reviews: [
+      {
+        name: "John Doe",
+        rating: 4.8,
+        text: "Great watch, very comfortable and stylish!",
+      },
+      {
+        rating: 4.8,
+        text: "I love this watch! It fits perfectly on my wrist.",
+      },
+    ],
+    avgRating: 4.5,
+    newArrival: false,
+    bestSeller: false,
+  },
 ];
 
 

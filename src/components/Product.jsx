@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Col } from "react-bootstrap";
 import { FaStar, FaHeart, FaRegHeart } from "react-icons/fa";
 import { FiPlus } from "react-icons/fi";
 import "../App.css";
 
-const Product = ({ title, productItems }) => {
+const Product = ({productItems}) => {
   const [liked, setLiked] = useState(false);
   return (
     <>
