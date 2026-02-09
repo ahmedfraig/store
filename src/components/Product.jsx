@@ -2,10 +2,24 @@ import { useState } from "react";
 import { Col } from "react-bootstrap";
 import { FaStar, FaHeart, FaRegHeart } from "react-icons/fa";
 import { FiPlus } from "react-icons/fi";
+import { useNavigate } from "react-router-dom";
 import "../App.css";
 
-const Product = ({productItems}) => {
+const Product = ({ productItems }) => {
   const [liked, setLiked] = useState(false);
+  const navigate = useNavigate();
+  const handleProductClick = (id) => {
+    navigate(`/shop/${id}`);
+  };
+
+  const handleLike = (e) => {
+    e.stopPropagation();
+    setLiked(!liked);
+  };
+
+  const handleAddToCart = (e) =>{
+    e.stopPropagation();
+  }
   return (
     <>
       {productItems.map((productItem) => {
@@ -17,7 +31,10 @@ const Product = ({productItems}) => {
             className="product mtop d-flex justify-content-center"
             key={productItem.id}
           >
-            <div className="product-item">
+            <div
+              className="product-item"
+              onClick={() => handleProductClick(productItem.id)}
+            >
               <div className="image-part">
                 <img
                   className="product-image"
@@ -29,7 +46,12 @@ const Product = ({productItems}) => {
                 >
                   {productItem.discount}% off
                 </div>
-                <div className="favorite-icon" onClick={() => setLiked(!liked)}>
+                <div
+                  className="favorite-icon"
+                  onClick={(e) => {
+                    handleLike(e);
+                  }}
+                >
                   {liked ? (
                     <FaHeart style={{ color: "red" }} />
                   ) : (
@@ -89,7 +111,7 @@ const Product = ({productItems}) => {
                       ${productItem.price}
                     </span>
                   </div>
-                  <button className="cart-add">
+                  <button className="cart-add" onClick={(e) => handleAddToCart(e)}>
                     <FiPlus />
                   </button>
                 </div>

@@ -67,6 +67,7 @@ export const products = [
         text: "Great sofa, very comfortable and stylish!",
       },
       {
+        name: "Jane Smith",
         rating: 4.8,
         text: "I love this sofa! It fits perfectly in my living room.",
       },
@@ -91,6 +92,7 @@ export const products = [
         text: "Great sofa, very comfortable and stylish!",
       },
       {
+        name: "Jane Smith",
         rating: 4.8,
         text: "I love this sofa! It fits perfectly in my living room.",
       },
@@ -135,6 +137,7 @@ export const products = [
         text: "Great phone, very powerful and stylish!",
       },
       {
+        name: "Jane Smith",
         rating: 4.8,
         text: "I love this phone! It fits perfectly in my hand.",
       },
@@ -159,6 +162,7 @@ export const products = [
         text: "Great phone, very powerful and stylish!",
       },
       {
+        name: "Jane Smith",
         rating: 4.8,
         text: "I love this phone! It fits perfectly in my hand.",
       },
@@ -183,6 +187,7 @@ export const products = [
         text: "Great phone, very powerful and stylish!",
       },
       {
+        name: "Jane Smith",
         rating: 4.8,
         text: "I love this phone! It fits perfectly in my hand.",
       },
@@ -207,6 +212,7 @@ export const products = [
         text: "Great phone, very powerful and stylish!",
       },
       {
+        name: "Jane Smith",
         rating: 4.8,
         text: "I love this phone! It fits perfectly in my hand.",
       },
@@ -231,6 +237,7 @@ export const products = [
         text: "Great phone, very powerful and stylish!",
       },
       {
+        name: "Jane Smith",
         rating: 4.8,
         text: "I love this phone! It fits perfectly in my hand.",
       },
@@ -255,6 +262,7 @@ export const products = [
         text: "Great chair, very comfortable and stylish!",
       },
       {
+        name: "Jane Smith",
         rating: 4.8,
         text: "I love this chair! It fits perfectly in my hand.",
       },
@@ -279,6 +287,7 @@ export const products = [
         text: "Great chair, very comfortable and stylish!",
       },
       {
+        name: "Jane Smith",
         rating: 4.8,
         text: "I love this chair! It fits perfectly in my hand.",
       },
@@ -303,6 +312,7 @@ export const products = [
         text: "Great chair, very comfortable and stylish!",
       },
       {
+        name: "Jane Smith",
         rating: 4.8,
         text: "I love this chair! It fits perfectly in my hand.",
       },
@@ -327,6 +337,7 @@ export const products = [
         text: "Great sofa, very comfortable and stylish!",
       },
       {
+        name: "Jane Smith",
         rating: 4.8,
         text: "I love this sofa! It fits perfectly in my living room.",
       },
@@ -351,6 +362,7 @@ export const products = [
         text: "Great sofa, very comfortable and stylish!",
       },
       {
+        name: "Jane Smith",
         rating: 4.8,
         text: "I love this sofa! It fits perfectly in my living room.",
       },
@@ -375,6 +387,7 @@ export const products = [
         text: "Great sofa, very comfortable and stylish!",
       },
       {
+        name: "Jane Smith",
         rating: 4.8,
         text: "I love this sofa! It fits perfectly in my living room.",
       },
@@ -399,6 +412,7 @@ export const products = [
         text: "Great sofa, very comfortable and stylish!",
       },
       {
+        name: "Jane Smith",
         rating: 4.8,
         text: "I love this sofa! It fits perfectly in my living room.",
       },
@@ -423,6 +437,7 @@ export const products = [
         text: "Great headphones, very comfortable and stylish!",
       },
       {
+        name: "Jane Smith",
         rating: 4.8,
         text: "I love these headphones! They fit perfectly on my ears.",
       },
@@ -447,6 +462,7 @@ export const products = [
         text: "Great headphones, very comfortable and stylish!",
       },
       {
+        name: "Jane Smith",
         rating: 4.8,
         text: "I love these headphones! They fit perfectly on my ears.",
       },
@@ -471,6 +487,7 @@ export const products = [
         text: "Great headphones, very comfortable and stylish!",
       },
       {
+        name: "Jane Smith",
         rating: 4.8,
         text: "I love these headphones! They fit perfectly on my ears.",
       },
@@ -495,6 +512,7 @@ export const products = [
         text: "Great headphones, very comfortable and stylish!",
       },
       {
+        name: "Jane Smith",
         rating: 4.8,
         text: "I love these headphones! They fit perfectly on my ears.",
       },
@@ -519,6 +537,7 @@ export const products = [
         text: "Great watch, very comfortable and stylish!",
       },
       {
+        name: "Jane Smith",
         rating: 4.8,
         text: "I love this watch! It fits perfectly on my wrist.",
       },
@@ -543,6 +562,7 @@ export const products = [
         text: "Great watch, very comfortable and stylish!",
       },
       {
+        name: "Jane Smith",
         rating: 4.8,
         text: "I love this watch! It fits perfectly on my wrist.",
       },
@@ -567,6 +587,7 @@ export const products = [
         text: "Great watch, very comfortable and stylish!",
       },
       {
+        name: "Jane Smith",
         rating: 4.8,
         text: "I love this watch! It fits perfectly on my wrist.",
       },
@@ -591,6 +612,7 @@ export const products = [
         text: "Great watch, very comfortable and stylish!",
       },
       {
+        name: "Jane Smith",
         rating: 4.8,
         text: "I love this watch! It fits perfectly on my wrist.",
       },
