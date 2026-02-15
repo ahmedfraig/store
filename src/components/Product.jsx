@@ -4,10 +4,14 @@ import { FaStar, FaHeart, FaRegHeart } from "react-icons/fa";
 import { FiPlus } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
 import "../App.css";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../redux/cartSlice";
+import { toast } from "react-toastify";
 
 const Product = ({ productItems }) => {
   const [liked, setLiked] = useState(false);
   const navigate = useNavigate();
+  const dispatch = useDispatch();
   const handleProductClick = (id) => {
     navigate(`/shop/${id}`);
   };
@@ -17,9 +21,12 @@ const Product = ({ productItems }) => {
     setLiked(!liked);
   };
 
-  const handleAddToCart = (e) =>{
+  const handleAddToCart = (e, productItem) => {
     e.stopPropagation();
-  }
+    dispatch(addToCart({ ...productItem, qty: 1 }));
+    toast.success("Product has been added to cart!");
+  };
+
   return (
     <>
       {productItems.map((productItem) => {
@@ -111,7 +118,10 @@ const Product = ({ productItems }) => {
                       ${productItem.price}
                     </span>
                   </div>
-                  <button className="cart-add" onClick={(e) => handleAddToCart(e)}>
+                  <button
+                    className="cart-add"
+                    onClick={(e) => handleAddToCart(e,productItem)}
+                  >
                     <FiPlus />
                   </button>
                 </div>

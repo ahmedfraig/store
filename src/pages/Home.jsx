@@ -31,7 +31,7 @@ const Home = () => {
       <SliderHome />
       <Wrapper />
       {productSection.map((section, index) => (
-        <section className={`productsSection ${section.backgroundColor}`}>
+        <section className={`productsSection ${section.backgroundColor}`} key={index}>
           <Container className="products-container">
             <Row className="mt-4 mb-4 row-section g-4 justify-content-center">
               <div className="heading d-flex justify-content-center">

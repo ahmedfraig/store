@@ -5,21 +5,35 @@ import { FaStar } from "react-icons/fa";
 import { Row, Col, Container } from "react-bootstrap";
 import ProductCard from "../components/Product";
 import "../App.css";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../redux/cartSlice";
+import { toast } from "react-toastify";
 
 const ProductDetails = () => {
   const { id } = useParams();
   const [tab, setTab] = useState("desc");
   const [product, setProduct] = useState(null);
+  const dispatch = useDispatch();
+  const [qty, setQty] = useState(1);
+
   useEffect(() => {
     const foundProduct = products.find((item) => item.id === id);
     setProduct(foundProduct);
-    setTimeout(() => {
-      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-    }, 100);
+    
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, [id]);
+
   const productItems = products.filter(
     (item) => item.category === product?.category,
   );
+
+  const handleAddToCart = () => {
+    dispatch(addToCart({ ...product, qty: qty }));
+
+    setQty(1);
+
+    toast.success("Product has been added to cart!");
+  };
 
   if (!product)
     return <h2 className="notFoundH2 text-center">Product Not Found</h2>;
@@ -106,17 +120,18 @@ const ProductDetails = () => {
                   <input
                     type="number"
                     className="qty-input form-control"
-                    defaultValue={1}
                     placeholder="Qty"
                     min={1}
                     max={100}
+                    value={qty}
+                    onChange={(e) => {
+                      const value = parseInt(e.target.value);
+                      setQty(value > 0 ? value : 1);
+                    }}
                   />
                 </div>
 
-                <button
-                  className="add-btn mt-4"
-                  onClick={() => alert("Added to Cart!")}
-                >
+                <button className="add-btn mt-4" onClick={handleAddToCart}>
                   Add To Cart
                 </button>
               </div>
