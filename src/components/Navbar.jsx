@@ -16,7 +16,7 @@ function NavBar() {
     <Navbar
       expanded={expand}
       expand="md"
-      className="bg-white fixed-top"
+      className="bg-white header-navbar"
       style={{ borderBottom: "3px solid #0599FC" }}
     >
       <Container>

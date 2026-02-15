@@ -47,10 +47,15 @@
 
 .homeSlider {
   background-color: #c4dcff;
-
-  margin-top: 50px;
   position: relative;
 }
+
+.header-navbar{
+  position: sticky !important;
+  top: 0;
+  z-index: 1000;
+}
+
 .carouselSlider .slick-slide {
   padding: 0 60px;
 }
@@ -309,10 +314,6 @@
   cursor: pointer;
 }
 
-.shopPageProducts {
-  margin-top: 58px;
-}
-
 .shop-heading {
   padding: 70px 2px;
   background-image:
@@ -378,7 +379,7 @@
 }
 
 .categoryFilter {
-  width: 200px;
+  width: 250px;
   flex-shrink: 0;
 }
 
@@ -508,7 +509,7 @@
 }
 
 .cart-items-section {
-  padding-top: 100px;
+  padding-top: 50px;
   background-color: #f6f9fc;
   min-height: 55vh;
 }
@@ -529,7 +530,6 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transform: scale(1.01);
     box-shadow: inset 0 -4px 0 0 #0599fc;
-    cursor: pointer;
 }
 
 .img-box img {
