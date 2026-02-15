@@ -35,6 +35,7 @@ const Shop = () => {
       backgroundColor: "#0599FC",
       color: "white",
       borderRadius: "30px",
+      width: "100%",
       border: "none",
       boxShadow: "none",
       cursor: "pointer",
